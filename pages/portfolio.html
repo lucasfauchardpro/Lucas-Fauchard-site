@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<script>(function(){try{var t=localStorage.getItem('theme')||'light';document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio · Lucas Fauchard</title>
+<meta name="description" content="Decouvrez mes realisations en communication digitale, branding, social media et strategie.">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav id="navbar">
+  <a class="nav-logo" href="../index.html">Lucas Fauchard</a>
+  <div class="nav-links" id="navLinks">
+    <a href="../index.html">Accueil</a>
+    <a href="portfolio.html" class="active">Portfolio</a>
+    <a href="livre-blanc.html">Livre Blanc</a>
+    <a href="contact.html" class="nav-cta">Me contacter</a>
+  </div>
+  <button class="theme-toggle" type="button" aria-label="Changer de th&egrave;me" onclick="toggleTheme()">
+    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+  </button>
+  <div class="nav-burger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</nav>
+
+<div class="page-content">
+
+  <div class="portfolio-hero">
+    <div class="section-label">R&eacute;alisations</div>
+    <div class="section-title">Portfolio</div>
+    <div class="section-subtitle">L'ensemble de mes projets, de la strat&eacute;gie &agrave; l'ex&eacute;cution.</div>
+  </div>
+
+  <!-- FILTER BAR Apple-style sticky -->
+  <div class="portfolio-filters-wrap">
+    <div class="portfolio-filters" id="portfolioFilters">
+      <span class="filter-indicator"></span>
+      <button class="filter-btn active" data-filter="all" onclick="filterProjects('all', this)">Tous</button>
+      <button class="filter-btn" data-filter="esp" onclick="filterProjects('esp', this)">Projets ESP</button>
+      <button class="filter-btn" data-filter="cavissima" onclick="filterProjects('cavissima', this)">Cavissima</button>
+      <button class="filter-btn" data-filter="bpaura" onclick="filterProjects('bpaura', this)">BPAURA</button>
+      <button class="filter-btn" data-filter="ef" onclick="filterProjects('ef', this)">Education First</button>
+      <button class="filter-btn" data-filter="perso" onclick="filterProjects('perso', this)">Personnel</button>
+    </div>
+    <div class="filter-counter"><strong id="projectCount">10</strong> projets &middot; 5 secteurs</div>
+  </div>
+
+  <div class="portfolio-grid-section">
+    <div class="portfolio-grid" id="portfolioGrid">
+
+      <!-- 01. L'INDUSTRIE MAGNIFIQUE · XL (4x2), vert profond -->
+      <div class="project-card bento-xl card-dark fade-in" data-cat="esp" onclick="openProject('industrie')">
+        <div class="slide-meta"><span>2027</span><span>Lyon</span><span>360&deg;</span></div>
+        <div class="project-content">
+          <div class="project-cat">Branding & Strat&eacute;gie 360&deg;</div>
+          <div class="project-name">L'Industrie Magnifique</div>
+          <div class="project-desc">Rebranding complet pour l'&eacute;dition Lyon 2027 : identit&eacute; visuelle ART&amp;FACT, social media, print, guerilla marketing.</div>
+          <div class="project-ctas"><span class="project-cta">D&eacute;couvrir le projet &rarr;</span></div>
+        </div>
+        <div class="project-visual">
+          <img src="../assets/images/logos/logo-industrie-magnifique.jpg" alt="L'Industrie Magnifique">
+        </div>
+        <div class="slide-tags"><span>Branding</span><span>Strat&eacute;gie</span><span>Print</span></div>
+      </div>
+
+      <!-- 02. CAVISSIMA SOCIAL · tall (2x2), bleu -->
+      <div class="project-card bento-tall card-blue fade-in" data-cat="cavissima" onclick="openProject('cavissima')">
+        <div class="slide-meta"><span>9 mois</span><span>2024-25</span></div>
+        <div class="project-content">
+          <div class="project-cat">Social Media & Influence</div>
+          <div class="project-name">Cavissima &middot; R&eacute;seaux sociaux</div>
+          <div class="project-desc">9 mois d'animation Instagram &amp; Facebook, partenariats et contenus vid&eacute;o.</div>
+          <div class="project-ctas"><span class="project-cta">Voir le projet &rarr;</span></div>
+        </div>
+        <div class="project-visual">
+          <img src="../assets/images/logos/logo-cavissima.png" alt="Cavissima">
+        </div>
+        <div class="slide-tags"><span>Social</span><span>Influence</span><span>Vid&eacute;o</span></div>
+      </div>
+
+      <!-- 03. ORALIA · third (2x1), vert olive -->
+      <div class="project-card bento-third card-vert-olive fade-in" data-cat="esp" onclick="openProject('oralia')">
+        <div class="slide-meta"><span>ESP</span></div>
+        <div class="project-content">
+          <div class="project-cat">Marque employeur</div>
+          <div class="project-name">Oralia</div>
+          <div class="project-desc">Strat&eacute;gie marque employeur : audit, plateforme de marque, motion design et landing page.</div>
+          <div class="project-ctas"><span class="project-cta">Voir le projet &rarr;</span></div>
+        </div>
+        <div class="project-visual">
+          <img src="../assets/images/logos/logo-oralia.svg" alt="Oralia">
+        </div>
+      </div>
+
+      <!-- 04. CAVISSIMA CONTENT · third (2x1), bleu -->
+      <div class="project-card bento-third card-blue fade-in" data-cat="cavissima" onclick="openProject('cavissima2')">
+        <div class="slide-meta"><span>SEO/SEA</span></div>
+        <div class="project-content">
+          <div class="project-cat">SEO, SEA & Contenu</div>
+          <div class="project-name">Cavissima &middot; Content</div>
+          <div class="project-desc">6 articles de blog, newsletters trimestrielles et r&eacute;f&eacute;rencement.</div>
+          <div class="project-ctas"><span class="project-cta">Voir le projet &rarr;</span></div>
+        </div>
+        <div class="project-visual">
+          <img src="../assets/images/logos/logo-cavissima.png" alt="Cavissima">
+        </div>
+      </div>
+
+      <!-- 05. BILUM · third (2x1), vert olive -->
+      <div class="project-card bento-third card-vert-olive fade-in" data-cat="esp" onclick="openProject('bilum')">
+        <div class="slide-meta"><span>RSE</span></div>
+        <div class="project-content">
+          <div class="project-cat">Vid&eacute;o & RSE</div>
+          <div class="project-name">Bilum</div>
+          <div class="project-desc">Vid&eacute;o case pour une marque d'upcycling &middot; Com for Climate.</div>
+          <div class="project-ctas"><span class="project-cta">Voir le projet &rarr;</span></div>
+        </div>
+        <div class="project-visual">
+          <img src="../assets/images/logos/logo-bilum.jpg" alt="Bilum">
+        </div>
+      </div>
+
+      <!-- 06. EDUCATION FIRST · feature (3x2), vert profond -->
+      <div class="project-card bento-feature card-dark fade-in" data-cat="ef" onclick="openProject('ef')">
+        <div class="slide-meta"><span>2023</span><span>Coupe du Monde</span></div>
+        <div class="project-content">
+          <div class="project-cat">Social Media & &Eacute;v&eacute;nementiel</div>
+          <div class="project-name">Education First</div>
+          <div class="project-desc">Campagnes social media et coordination sponsoring Coupe du Monde de Rugby 2023.</div>
+          <div class="project-ctas"><span class="project-cta">Voir le projet &rarr;</span></div>
+        </div>
+        <div class="project-visual">
+          <img src="../assets/images/logos/logo-ef.png" alt="Education First">
+        </div>
+        <div class="slide-tags"><span>Social</span><span>&Eacute;v&eacute;nementiel</span><span>Sponsoring</span></div>
+      </div>
+
+      <!-- 07. BPAURA · feature (3x2), bleu -->
+      <div class="project-card bento-feature card-blue fade-in" data-cat="bpaura" onclick="openProject('bpaura')">
+        <div class="slide-meta"><span>2025</span><span>Risques &amp; KYC</span></div>
+        <div class="project-content">
+          <div class="project-cat">Communication & Formation</div>
+          <div class="project-name">Banque Populaire</div>
+          <div class="project-desc">Communication digitale, IA et formation KYC pour la direction des risques.</div>
+          <div class="project-ctas"><span class="project-cta">Voir le projet &rarr;</span></div>
+        </div>
+        <div class="project-visual">
+          <img src="../assets/images/logos/logo-bpaura.png" alt="BPAURA" class="logo-white">
+        </div>
+        <div class="slide-tags"><span>Com interne</span><span>IA</span><span>Formation</span></div>
+      </div>
+
+      <!-- 08. BPAURA MASCOTTE · half (3x1), bleu -->
+      <div class="project-card bento-half card-blue fade-in" data-cat="bpaura" onclick="openProject('bpaura2')">
+        <div class="slide-meta"><span>Cr&eacute;ation visuelle</span><span>2025</span></div>
+        <div class="project-content">
+          <div class="project-cat">Cr&eacute;ation & Branding</div>
+          <div class="project-name">BPAURA &middot; Mascotte</div>
+          <div class="project-desc">Conception d'une mascotte digitale (Simon) pour humaniser la direction des risques.</div>
+          <div class="project-ctas"><span class="project-cta">Voir le projet &rarr;</span></div>
+        </div>
+        <div class="project-visual">
+          <img src="../assets/images/logos/logo-bpaura.png" alt="BPAURA" class="logo-white">
+        </div>
+        <div class="slide-tags"><span>Branding</span><span>Mascotte</span><span>IA</span></div>
+      </div>
+
+      <!-- 09. EXPLORE · half (3x1), vert profond · projet personnel app mobile -->
+      <div class="project-card bento-half card-dark fade-in" data-cat="perso" onclick="openProject('explore')">
+        <div class="slide-meta"><span>2026</span><span>Vibe coding</span></div>
+        <div class="project-content">
+          <div class="project-cat">App mobile & Vibe coding</div>
+          <div class="project-name">Explore</div>
+          <div class="project-desc">Application mobile pour digital nomads, con&ccedil;ue avec Claude Code.</div>
+          <div class="project-ctas"><span class="project-cta">Tester l'app &rarr;</span></div>
+        </div>
+        <div class="project-visual">
+          <img src="../assets/images/logos/logo-explore.png" alt="Explore">
+        </div>
+        <div class="slide-tags"><span>App mobile</span><span>React Native</span><span>IA</span></div>
+      </div>
+
+      <!-- 10. FCD PICTURES · photo bento (6x2) -->
+      <div class="project-card bento-photo fade-in" data-cat="perso" onclick="openProject('photo')" style="background-image:url('../assets/images/fcd/IMG_3217.JPG')">
+        <div class="project-info-overlay">
+          <div class="project-cat">Photographie</div>
+          <div class="project-name">FCD Pictures</div>
+          <span class="project-link">D&eacute;couvrir le compte &rarr;</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<!-- PROJECT DETAIL OVERLAY -->
+<div class="project-detail" id="projectDetail">
+  <button class="detail-close" onclick="closeProject()">&times;</button>
+  <div id="projectDetailContent"></div>
+</div>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()"><img id="lightboxImg" src="" alt=""></div>
+
+<!-- SCROLL TO TOP -->
+<button class="scroll-top" id="scrollTopBtn">&uarr;</button>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <h3>Lucas Fauchard</h3>
+      <p>Communication digitale & strat&eacute;gie, toujours curieux, toujours critique. Disponible &agrave; partir de septembre 2026.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <a href="../index.html">Accueil</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="livre-blanc.html">Livre Blanc</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="mailto:lucasfauchard.pro@gmail.com">lucasfauchard.pro@gmail.com</a>
+      <a href="https://www.linkedin.com/in/lucas-fauchard/" target="_blank">LinkedIn &rarr;</a>
+    </div>
+  </div>
+  <div class="footer-bottom">&copy; 2026 Lucas Fauchard &middot; Tous droits r&eacute;serv&eacute;s</div>
+</footer>
+
+<script>window.ASSET_BASE="../";</script>
+<script src="../scripts/script.js"></script>
+<script>
+if (window.location.hash) {
+  var id = window.location.hash.substring(1);
+  if (projectData[id]) setTimeout(function() { openProject(id); }, 300);
+}
+</script>
+</body>
+</html>

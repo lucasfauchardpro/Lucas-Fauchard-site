@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<script>(function(){try{var t=localStorage.getItem('theme')||'light';document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact · Lucas Fauchard</title>
+<meta name="description" content="Contactez Lucas Fauchard pour un projet, une question ou une opportunite en communication digitale et strategie IA.">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav id="navbar">
+  <a class="nav-logo" href="../index.html">Lucas Fauchard</a>
+  <div class="nav-links" id="navLinks">
+    <a href="../index.html">Accueil</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="livre-blanc.html">Livre Blanc</a>
+    <a href="contact.html" class="nav-cta active">Me contacter</a>
+  </div>
+  <button class="theme-toggle" type="button" aria-label="Changer de th&egrave;me" onclick="toggleTheme()">
+    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+  </button>
+  <div class="nav-burger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</nav>
+
+<div class="page-content">
+
+  <!-- 01 · HERO IMMERSIF -->
+  <section class="contact-hero-v2">
+    <div>
+      <span class="contact-available">Disponible &agrave; partir de septembre&nbsp;2026</span>
+      <h1>Travaillons<br>ensemble.</h1>
+      <p class="tagline">Un projet, une opportunit&eacute;, une simple curiosit&eacute; autour de la com' digitale, de la strat&eacute;gie ou de l'IA · &eacute;crivez-moi, je suis &agrave; votre &eacute;coute.</p>
+      <div class="contact-hero-buttons">
+        <a class="btn-primary" href="mailto:lucasfauchard.pro@gmail.com">M'envoyer un email &rarr;</a>
+        <a class="text-link" href="https://www.linkedin.com/in/lucas-fauchard/" target="_blank">Voir mon LinkedIn &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 · COMMENT ME JOINDRE (3 canaux + mini form) -->
+  <section class="contact-section">
+    <div class="contact-section-eyebrow">Comment me joindre</div>
+    <h2 class="contact-section-title">Choisissez votre canal.</h2>
+
+    <div class="contact-channels">
+      <!-- Email · vert profond -->
+      <a class="contact-channel bg-vert fade-in" href="mailto:lucasfauchard.pro@gmail.com">
+        <div class="contact-channel-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <span class="contact-channel-eyebrow">Email direct</span>
+        <h3 class="contact-channel-title">L'option<br>la plus rapide</h3>
+        <p class="contact-channel-desc">Pour une question pr&eacute;cise ou une opportunit&eacute; concr&egrave;te.</p>
+        <span class="contact-channel-link">lucasfauchard.pro@gmail.com &rarr;</span>
+      </a>
+
+      <!-- LinkedIn · bleu -->
+      <a class="contact-channel bg-bleu fade-in" href="https://www.linkedin.com/in/lucas-fauchard/" target="_blank" rel="noopener">
+        <div class="contact-channel-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"/></svg>
+        </div>
+        <span class="contact-channel-eyebrow">R&eacute;seau pro</span>
+        <h3 class="contact-channel-title">Suivre ma veille IA &amp; com'</h3>
+        <p class="contact-channel-desc">Je publie r&eacute;guli&egrave;rement sur l'IA, la strat&eacute;gie et l'esprit critique.</p>
+        <span class="contact-channel-link">linkedin.com/in/lucas-fauchard &rarr;</span>
+      </a>
+
+      <!-- CV PDF · vert olive -->
+      <a class="contact-channel bg-olive fade-in" href="../assets/docs/CV-Lucas-Fauchard.pdf" target="_blank" rel="noopener" download>
+        <div class="contact-channel-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
+        </div>
+        <span class="contact-channel-eyebrow">Mon parcours</span>
+        <h3 class="contact-channel-title">T&eacute;l&eacute;charger mon CV</h3>
+        <p class="contact-channel-desc">Format PDF, mis &agrave; jour avec mes derni&egrave;res exp&eacute;riences.</p>
+        <span class="contact-channel-link">CV-Lucas-Fauchard.pdf &darr;</span>
+      </a>
+    </div>
+
+    <!-- Mini form intégré -->
+    <div class="contact-form-simple fade-in">
+      <div class="contact-form-simple-header">
+        <h3>Pr&eacute;f&eacute;rez &eacute;crire ?</h3>
+        <p>Quelques lignes suffisent, je reviens vers vous.</p>
+      </div>
+      <form onsubmit="event.preventDefault(); this.innerHTML='<p style=&quot;font-size:17px;font-weight:600;color:var(--emeraude);padding:32px 0;text-align:center;&quot;>Message bien re&ccedil;u, merci !<br><span style=&quot;font-size:14px;font-weight:400;color:var(--text-soft);&quot;>Je reviens vers vous tr&egrave;s vite.</span></p>';">
+        <div class="form-group">
+          <label for="contact-nom">Nom</label>
+          <input type="text" id="contact-nom" placeholder="Votre nom" required>
+        </div>
+        <div class="form-group">
+          <label for="contact-email">Email</label>
+          <input type="email" id="contact-email" placeholder="votre@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="contact-message">Message</label>
+          <textarea id="contact-message" placeholder="Quelques lignes sur votre demande..." required></textarea>
+        </div>
+        <button type="submit">Envoyer le message &rarr;</button>
+      </form>
+    </div>
+  </section>
+
+</div>
+
+<!-- SCROLL TO TOP -->
+<button class="scroll-top" id="scrollTopBtn">&uarr;</button>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <h3>Lucas Fauchard</h3>
+      <p>Communication digitale & strat&eacute;gie, toujours curieux, toujours critique. Disponible &agrave; partir de septembre 2026.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <a href="../index.html">Accueil</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="livre-blanc.html">Livre Blanc</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="mailto:lucasfauchard.pro@gmail.com">lucasfauchard.pro@gmail.com</a>
+      <a href="https://www.linkedin.com/in/lucas-fauchard/" target="_blank">LinkedIn &rarr;</a>
+    </div>
+  </div>
+  <div class="footer-bottom">&copy; 2026 Lucas Fauchard &middot; Tous droits r&eacute;serv&eacute;s</div>
+</footer>
+
+<script>window.ASSET_BASE="../";</script>
+<script src="../scripts/script.js"></script>
+</body>
+</html>

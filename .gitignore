@@ -1,0 +1,23 @@
+# Dossiers techniques
+.claude/
+archive/
+
+# Fichiers OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Backups éventuels
+*.backup
+*.bak
+*.tmp
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Vidéos lourdes (à héberger sur YouTube/Vimeo)
+assets/videos/*.mp4
