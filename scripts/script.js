@@ -1018,11 +1018,11 @@ document.addEventListener('keydown', function(e) {
   if (e.key === 'Escape') { closeProject(); closeLightbox(); }
 });
 
-// ---- Countdown 31 mai 2026 (avec pulse à chaque tick) ----
+// ---- Countdown 1er juin 2026 (avec pulse à chaque tick) ----
 (function() {
   var daysEl = document.getElementById('cd-days');
   if (!daysEl) return;
-  var target = new Date('2026-05-31T00:00:00').getTime();
+  var target = new Date('2026-06-01T00:00:00').getTime();
   var lastVals = { days: null, hours: null, mins: null, secs: null };
 
   function setVal(id, val, key) {
@@ -1112,7 +1112,7 @@ function toggleSummary(item) {
     });
 
     function showSuccess() {
-      form.innerHTML = '<div style="text-align:center;padding:32px 0"><p style="font-size:20px;font-weight:600;color:var(--vert-profond);margin-bottom:8px">Merci ' + data.prenom + ' !</p><p style="font-size:15px;color:var(--vert-legende)">Vous recevrez le livre blanc d\u00e8s sa sortie le 31 mai 2026.</p></div>';
+      form.innerHTML = '<div style="text-align:center;padding:32px 0"><p style="font-size:20px;font-weight:600;color:var(--vert-profond);margin-bottom:8px">Merci ' + data.prenom + ' !</p><p style="font-size:15px;color:var(--vert-legende)">Vous recevrez le livre blanc d\u00e8s sa sortie le 1er juin 2026.</p></div>';
     }
   });
 })();
